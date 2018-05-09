@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="https://wrappixel.com/demos/admin-templates/material-pro/assets/images/favicon.png">
+    <title>Material Pro Admin Template - The Most Complete &amp; Trusted Bootstrap 4 Admin Template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="./assets/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./assets/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="./assets/blue.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="./assets/MathJax.js.download"></script><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body class="fix-header card-no-border logo-center" cz-shortcut-listen="true"><div id="MathJax_Message" style="display: none;"></div>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader" style="display: none;">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar is_stuck" style="position: fixed; top: 0px; width: 1349px;">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/index.html">
+                        <!-- Logo icon -->
+                        <b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="./assets/logo-icon.png" alt="homepage" class="dark-logo">
+                            <!-- Light Logo icon -->
+                            <img src="./assets/logo-light-icon.png" alt="homepage" class="light-logo">
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+                        <span>
+                         <!-- dark Logo text -->
+                         <img src="./assets/logo-text.png" alt="homepage" class="dark-logo">
+                         <!-- Light Logo text -->    
+                         <img src="./assets/logo-light-text.png" class="light-logo" alt="homepage"></span> </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item hidden-sm-down search-box">
+                            <a class="nav-link hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
+                            <form class="app-search">
+                                <input type="text" class="form-control" placeholder="Search &amp; enter"> <a class="srh-btn"><i class="ti-close"></i></a> </form>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- Messages -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown mega-dropdown"> <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-view-grid"></i></a>
+                            <div class="dropdown-menu scale-up-left">
+                                <ul class="mega-dropdown-menu row">
+                                    <li class="col-lg-3 col-xlg-2 m-b-30">
+                                        <h4 class="m-b-20">CAROUSEL</h4>
+                                        <!-- CAROUSEL -->
+                                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner" role="listbox">
+                                                <div class="carousel-item active">
+                                                    <div class="container"> <img class="d-block img-fluid" src="./assets/img1.jpg" alt="First slide"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="container"><img class="d-block img-fluid" src="./assets/img2.jpg" alt="Second slide"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="container"><img class="d-block img-fluid" src="./assets/img3.jpg" alt="Third slide"></div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#carouselExampleControls" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+                                            <a class="carousel-control-next" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#carouselExampleControls" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+                                        </div>
+                                        <!-- End CAROUSEL -->
+                                    </li>
+                                    <li class="col-lg-3 m-b-30">
+                                        <h4 class="m-b-20">ACCORDION</h4>
+                                        <!-- Accordian -->
+                                        <div id="accordion" class="nav-accordion" role="tablist" aria-multiselectable="true">
+                                            <div class="card">
+                                                <div class="card-header" role="tab" id="headingOne">
+                                                    <h5 class="mb-0">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                  Collapsible Group Item #1
+                                                </a>
+                                              </h5> </div>
+                                                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                                                    <div class="card-body"> Anim pariatur cliche reprehenderit, enim eiusmod high. </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" role="tab" id="headingTwo">
+                                                    <h5 class="mb-0">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                  Collapsible Group Item #2
+                                                </a>
+                                              </h5> </div>
+                                                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                    <div class="card-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" role="tab" id="headingThree">
+                                                    <h5 class="mb-0">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                  Collapsible Group Item #3
+                                                </a>
+                                              </h5> </div>
+                                                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                    <div class="card-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-lg-3  m-b-30">
+                                        <h4 class="m-b-20">CONTACT US</h4>
+                                        <!-- Contact -->
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Name"> </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" placeholder="Enter email"> </div>
+                                            <div class="form-group">
+                                                <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Message"></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-info">Submit</button>
+                                        </form>
+                                    </li>
+                                    <li class="col-lg-3 col-xlg-4 m-b-30">
+                                        <h4 class="m-b-20">List style</h4>
+                                        <!-- List style -->
+                                        <ul class="list-style-none">
+                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> You can give link</a></li>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> Give link</a></li>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> Another Give link</a></li>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> Forth link</a></li>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> Another fifth link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- End Messages -->
+                        <!-- ============================================================== -->
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav my-lg-0">
+                        <!-- ============================================================== -->
+                        <!-- Comment -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted text-muted waves-effect waves-dark" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-message"></i>
+                                <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right mailbox scale-up">
+                                <ul>
+                                    <li>
+                                        <div class="drop-title">Notifications</div>
+                                    </li>
+                                    <li>
+                                        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 250px;"><div class="message-center" style="overflow: hidden; width: auto; height: 250px;">
+                                            <!-- Message -->
+                                            <a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#">
+                                                <div class="btn btn-danger btn-circle"><i class="fa fa-link"></i></div>
+                                                <div class="mail-contnet">
+                                                    <h5>Luanch Admin</h5> <span class="mail-desc">Just see the my new admin!</span> <span class="time">9:30 AM</span> </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#">
+                                                <div class="btn btn-success btn-circle"><i class="ti-calendar"></i></div>
+                                                <div class="mail-contnet">
+                                                    <h5>Event today</h5> <span class="mail-desc">Just a reminder that you have event</span> <span class="time">9:10 AM</span> </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#">
+                                                <div class="btn btn-info btn-circle"><i class="ti-settings"></i></div>
+                                                <div class="mail-contnet">
+                                                    <h5>Settings</h5> <span class="mail-desc">You can customize this template as you want</span> <span class="time">9:08 AM</span> </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#">
+                                                <div class="btn btn-primary btn-circle"><i class="ti-user"></i></div>
+                                                <div class="mail-contnet">
+                                                    <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
+                                            </a>
+                                        </div><div class="slimScrollBar" style="background: rgb(220, 220, 220); width: 5px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 192.901px;"></div><div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link text-center" href="javascript:void(0);"> <strong>Check all notifications</strong> <i class="fa fa-angle-right"></i> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- End Comment -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- Messages -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-email"></i>
+                                <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                            </a>
+                            <div class="dropdown-menu mailbox dropdown-menu-right scale-up" aria-labelledby="2">
+                                <ul>
+                                    <li>
+                                        <div class="drop-title">You have 4 new messages</div>
+                                    </li>
+                                    <li>
+                                        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 250px;"><div class="message-center" style="overflow: hidden; width: auto; height: 250px;">
+                                            <!-- Message -->
+                                            <a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#">
+                                                <div class="user-img"> <img src="./assets/1.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                                <div class="mail-contnet">
+                                                    <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span> </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#">
+                                                <div class="user-img"> <img src="./assets/2.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                                                <div class="mail-contnet">
+                                                    <h5>Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#">
+                                                <div class="user-img"> <img src="./assets/3.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+                                                <div class="mail-contnet">
+                                                    <h5>Arijit Sinh</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span> </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#">
+                                                <div class="user-img"> <img src="./assets/4.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                                                <div class="mail-contnet">
+                                                    <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
+                                            </a>
+                                        </div><div class="slimScrollBar" style="background: rgb(220, 220, 220); width: 5px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 183.824px;"></div><div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link text-center" href="javascript:void(0);"> <strong>See all e-Mails</strong> <i class="fa fa-angle-right"></i> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- End Messages -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- Profile -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="./assets/1.jpg" alt="user" class="profile-pic"></a>
+                            <div class="dropdown-menu dropdown-menu-right scale-up">
+                                <ul class="dropdown-user">
+                                    <li>
+                                        <div class="dw-user-box">
+                                            <div class="u-img"><img src="./assets/1.jpg" alt="user"></div>
+                                            <div class="u-text">
+                                                <h4>Steave Jobs</h4>
+                                                <p class="text-muted">varun@gmail.com</p><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
+                                        </div>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#"><i class="ti-user"></i> My Profile</a></li>
+                                    <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#"><i class="ti-wallet"></i> My Balance</a></li>
+                                    <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#"><i class="ti-email"></i> Inbox</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#"><i class="ti-settings"></i> Account Setting</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#"><i class="fa fa-power-off"></i> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- Language -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-us"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right scale-up"> <a class="dropdown-item" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#"><i class="flag-icon flag-icon-in"></i> India</a> <a class="dropdown-item" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#"><i class="flag-icon flag-icon-fr"></i> French</a> <a class="dropdown-item" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#"><i class="flag-icon flag-icon-cn"></i> China</a> <a class="dropdown-item" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#"><i class="flag-icon flag-icon-de"></i> Dutch</a> </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header><div style="position: relative; width: 1349px; height: 70px; display: block; vertical-align: baseline; float: none;"></div>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav active">
+                    <ul id="sidebarnav" class="in">
+                        <li class="nav-small-cap">PERSONAL</li>
+                        <li>
+                            <a class="has-arrow" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard </span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/index.html">Dashboard 1</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/index2.html">Dashboard 2</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/index3.html">Dashboard 3</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/index4.html">Dashboard 4</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/index5.html">Dashboard 5</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/index6.html">Dashboard 6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow " href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#" aria-expanded="false"><i class="mdi mdi-bullseye"></i><span class="hide-menu">Apps</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/app-calendar.html">Calendar</a></li>
+                                <li>
+                                    <a class="has-arrow" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#" aria-expanded="false">Inbox</a>
+                                    <ul aria-expanded="false" class="collapse">
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/app-email.html">Mailbox</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/app-email-detail.html">Mailbox Detail</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/app-compose.html">Compose Mail</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/app-chat.html">Chat app</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/app-ticket.html">Support Ticket</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/app-contact.html">Contact / Employee</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/app-contact2.html">Contact Grid</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/app-contact-detail.html">Contact Detail</a></li>
+                            </ul>
+                        </li>
+                        <li class="three-column">
+                            <a class="has-arrow" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Ui Elements</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-tooltip-stylish.html">Tooltip stylish</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-sweetalert.html">Sweet Alert</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-cards.html">Cards</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-user-card.html">User Cards</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-buttons.html">Buttons</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-modals.html">Modals</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-tab.html">Tab</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-tooltip-popover.html">Tooltip &amp; Popover</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-notification.html">Notification</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-progressbar.html">Progressbar</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-typography.html">Typography</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-bootstrap.html">Bootstrap Ui</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-breadcrumb.html">Breadcrumb</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-bootstrap-switch.html">Bootstrap Switch</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-list-media.html">List Media</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-ribbons.html">Ribbons</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-grid.html">Grid</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-carousel.html">Carousel</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-nestable.html">Nestable</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-range-slider.html">Range slider</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-timeline.html">Timeline</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-horizontal-timeline.html">Horizontal Timeline</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-session-timeout.html">Session Timeout</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-session-ideal-timeout.html">Session Ideal Timeout</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-date-paginator.html">Date-paginator</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/ui-dragable-portlet.html">Dragable Portlet</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-devider"></li>
+                        <li class="nav-small-cap">FORMS, TABLE &amp; WIDGETS</li>
+                        <li class="two-column">
+                            <a class="has-arrow" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#" aria-expanded="false"><i class="mdi mdi-file"></i><span class="hide-menu">Forms</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/form-basic.html">Basic Forms</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/form-layout.html">Form Layouts</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/form-addons.html">Form Addons</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/form-material.html">Form Material</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/form-float-input.html">Floating Lable</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/form-pickers.html">Form Pickers</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/form-upload.html">File Upload</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/form-mask.html">Form Mask</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/form-validation.html">Form Validation</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/form-dropzone.html">File Dropzone</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/form-icheck.html">Icheck control</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/form-img-cropper.html">Image Cropper</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/form-bootstrapwysihtml5.html">HTML5 Editor</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/form-typehead.html">Form Typehead</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/form-wizard.html">Form Wizard</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/form-xeditable.html">Xeditable Editor</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/form-summernote.html">Summernote Editor</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/form-tinymce.html">Tinymce Editor</a></li>
+                            </ul>
+                        </li>
+                        <li class="active">
+                            <a class="has-arrow " href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Tables</span></a>
+                            <ul aria-expanded="true" class="collapse in">
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-basic.html">Basic Tables</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-layout.html">Table Layouts</a></li>
+                                <li class="active"><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html" class="active">Data Tables</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-footable.html">Footable</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-jsgrid.html">Js Grid Table</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-responsive.html">Responsive Table</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-bootstrap.html">Bootstrap Tables</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-editable-table.html">Editable Table</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-devider"></li>
+                        <li class="nav-small-cap">EXTRA COMPONENTS</li>
+                        <li class="two-column">
+                            <a class="has-arrow " href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#" aria-expanded="false"><i class="mdi mdi-book-open-variant"></i><span class="hide-menu">Pages</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/starter-kit.html">Starter Kit</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-profile.html">Profile page</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-animation.html">Animation</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-fix-innersidebar.html">Sticky Left sidebar</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-fix-inner-right-sidebar.html">Sticky Right sidebar</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-invoice.html">Invoice</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-treeview.html">Treeview</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-utility-classes.html">Helper Classes</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-search-result.html">Search result</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-scroll.html">Scrollbar</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-pricing.html">Pricing</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-lightbox-popup.html">Lighbox popup</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-gallery.html">Gallery</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-faq.html">Faqs</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#" class="has-arrow">Error Pages</a>
+                                    <ul aria-expanded="false" class="collapse">
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-error-400.html">400</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-error-403.html">403</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-error-404.html">404</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-error-500.html">500</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-error-503.html">503</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#" class="has-arrow">Authentication <span class="label label-rounded label-success">6</span></a>
+                                    <ul aria-expanded="false" class="collapse">
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-login.html">Login 1</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-login-2.html">Login 2</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-register.html">Register</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-register2.html">Register 2</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-lockscreen.html">Lockscreen</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/pages-recover-password.html">Recover password</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow " href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#" aria-expanded="false"><i class="mdi mdi-widgets"></i><span class="hide-menu">Extra</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li>
+                                    <a class="has-arrow " href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#" aria-expanded="false">Widgets</a>
+                                    <ul aria-expanded="false" class="collapse">
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/widget-apps.html">Widget Apps</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/widget-data.html">Widget Data</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/widget-charts.html">Widget Charts</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="has-arrow " href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#" aria-expanded="false">Maps</a>
+                                    <ul aria-expanded="false" class="collapse">
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/map-google.html">Google Maps</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/map-vector.html">Vector Maps</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="has-arrow " href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#" aria-expanded="false">Icons</a>
+                                    <ul aria-expanded="false" class="collapse">
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/icon-material.html">Material Icons</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/icon-fontawesome.html">Fontawesome Icons</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/icon-themify.html">Themify Icons</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/icon-linea.html">Linea Icons</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/icon-weather.html">Weather Icons</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/icon-simple-lineicon.html">Simple Lineicons</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/icon-flag.html">Flag Icons</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="has-arrow " href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#" aria-expanded="false">Charts</a>
+                                    <ul aria-expanded="false" class="collapse">
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/chart-morris.html">Morris Chart</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/chart-chartist.html">Chartis Chart</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/chart-echart.html">Echarts</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/chart-flot.html">Flot Chart</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/chart-knob.html">Knob Chart</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/chart-chart-js.html">Chartjs</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/chart-sparkline.html">Sparkline Chart</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/chart-extra-chart.html">Extra chart</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/chart-peity.html">Peity Charts</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow " href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#" aria-expanded="false"><i class="mdi mdi-arrange-send-backward"></i><span class="hide-menu">Multi level dd</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#">item 1.1</a></li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#">item 1.2</a></li>
+                                <li>
+                                    <a class="has-arrow" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#" aria-expanded="false">Menu 1.3</a>
+                                    <ul aria-expanded="false" class="collapse">
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#">item 1.3.1</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#">item 1.3.2</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#">item 1.3.3</a></li>
+                                        <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#">item 1.3.4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#">item 1.4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper" style="min-height: 517px;">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                    <div class="col-md-5 col-8 align-self-center">
+                        <h3 class="text-themecolor m-b-0 m-t-0">Table Data table</h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item active">Table Data table</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-7 col-4 align-self-center">
+                        <div class="d-flex m-t-10 justify-content-end">
+                            <div class="d-flex m-r-20 m-l-10 hidden-md-down">
+                                <div class="chart-text m-r-10">
+                                    <h6 class="m-b-0"><small>THIS MONTH</small></h6>
+                                    <h4 class="m-t-0 text-info">$58,356</h4></div>
+                                <div class="spark-chart">
+                                    <div id="monthchart"><canvas width="60" height="35" style="display: inline-block; width: 60px; height: 35px; vertical-align: top;"></canvas></div>
+                                </div>
+                            </div>
+                            <div class="d-flex m-r-20 m-l-10 hidden-md-down">
+                                <div class="chart-text m-r-10">
+                                    <h6 class="m-b-0"><small>LAST MONTH</small></h6>
+                                    <h4 class="m-t-0 text-primary">$48,356</h4></div>
+                                <div class="spark-chart">
+                                    <div id="lastmonthchart"><canvas width="60" height="35" style="display: inline-block; width: 60px; height: 35px; vertical-align: top;"></canvas></div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <button class="right-side-toggle waves-effect waves-light btn-success btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Data Export</h4>
+                                <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF &amp; Print</h6>
+                                <div class="table-responsive m-t-40">
+                                    <div id="example23_wrapper" class="dataTables_wrapper"><div class="dt-buttons"><a class="dt-button buttons-copy buttons-html5" tabindex="0" aria-controls="example23" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#"><span>Copy</span></a><a class="dt-button buttons-csv buttons-html5" tabindex="0" aria-controls="example23" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#"><span>CSV</span></a><a class="dt-button buttons-excel buttons-html5" tabindex="0" aria-controls="example23" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#"><span>Excel</span></a><a class="dt-button buttons-pdf buttons-html5" tabindex="0" aria-controls="example23" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#"><span>PDF</span></a><a class="dt-button buttons-print" tabindex="0" aria-controls="example23" href="https://wrappixel.com/demos/admin-templates/material-pro/horizontal/table-data-table.html#"><span>Print</span></a></div><div id="example23_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="example23"></label></div><table id="example23" class="display nowrap table table-hover table-striped table-bordered dataTable" cellspacing="0" width="100%" role="grid" aria-describedby="example23_info" style="width: 100%;">
+                                        <thead>
+                                            <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="example23" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 220px;">Name</th><th class="sorting" tabindex="0" aria-controls="example23" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 324px;">Position</th><th class="sorting" tabindex="0" aria-controls="example23" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 168px;">Office</th><th class="sorting" tabindex="0" aria-controls="example23" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 81px;">Age</th><th class="sorting" tabindex="0" aria-controls="example23" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 151px;">Start date</th><th class="sorting" tabindex="0" aria-controls="example23" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 121px;">Salary</th></tr>
+                                        </thead>
+                                        <tfoot>
+                                            <tr><th rowspan="1" colspan="1">Name</th><th rowspan="1" colspan="1">Position</th><th rowspan="1" colspan="1">Office</th><th rowspan="1" colspan="1">Age</th><th rowspan="1" colspan="1">Start date</th><th rowspan="1" colspan="1">Salary</th></tr>
+                                        </tfoot>
+                                        <tbody>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                        <tr role="row" class="odd">
+                                                <td class="sorting_1">Airi Satou</td>
+                                                <td>Accountant</td>
+                                                <td>Tokyo</td>
+                                                <td>33</td>
+                                                <td>2008/11/28</td>
+                                                <td>$162,700</td>
+                                            </tr><tr role="row" class="even">
+                                                <td class="sorting_1">Angelica Ramos</td>
+                                                <td>Chief Executive Officer (CEO)</td>
+                                                <td>London</td>
+                                                <td>47</td>
+                                                <td>2009/10/09</td>
+                                                <td>$1,200,000</td>
+                                            </tr><tr role="row" class="odd">
+                                                <td class="sorting_1">Ashton Cox</td>
+                                                <td>Junior Technical Author</td>
+                                                <td>San Francisco</td>
+                                                <td>66</td>
+                                                <td>2009/01/12</td>
+                                                <td>$86,000</td>
+                                            </tr><tr role="row" class="even">
+                                                <td class="sorting_1">Bradley Greer</td>
+                                                <td>Software Engineer</td>
+                                                <td>London</td>
+                                                <td>41</td>
+                                                <td>2012/10/13</td>
+                                                <td>$132,000</td>
+                                            </tr><tr role="row" class="odd">
+                                                <td class="sorting_1">Brenden Wagner</td>
+                                                <td>Software Engineer</td>
+                                                <td>San Francisco</td>
+                                                <td>28</td>
+                                                <td>2011/06/07</td>
+                                                <td>$206,850</td>
+                                            </tr><tr role="row" class="even">
+                                                <td class="sorting_1">Brielle Williamson</td>
+                                                <td>Integration Specialist</td>
+                                                <td>New York</td>
+                                                <td>61</td>
+                                                <td>2012/12/02</td>
+                                                <td>$372,000</td>
+                                            </tr><tr role="row" class="odd">
+                                                <td class="sorting_1">Bruno Nash</td>
+                                                <td>Software Engineer</td>
+                                                <td>London</td>
+                                                <td>38</td>
+                                                <td>2011/05/03</td>
+                                                <td>$163,500</td>
+                                            </tr><tr role="row" class="even">
+                                                <td class="sorting_1">Caesar Vance</td>
+                                                <td>Pre-Sales Support</td>
+                                                <td>New York</td>
+                                                <td>21</td>
+                                                <td>2011/12/12</td>
+                                                <td>$106,450</td>
+                                            </tr><tr role="row" class="odd">
+                                                <td class="sorting_1">Cara Stevens</td>
+                                                <td>Sales Assistant</td>
+                                                <td>New York</td>
+                                                <td>46</td>
+                                                <td>2011/12/06</td>
+                                                <td>$145,600</td>
+                                            </tr><tr role="row" class="even">
+                                                <td class="sorting_1">Cedric Kelly</td>
+                                                <td>Senior Javascript Developer</td>
+                                                <td>Edinburgh</td>
+                                                <td>22</td>
+                                                <td>2012/03/29</td>
+                                                <td>$433,060</td>
+                                            </tr></tbody>
+                                    </table><div class="dataTables_info" id="example23_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div><div class="dataTables_paginate paging_simple_numbers" id="example23_paginate"><a class="paginate_button previous disabled" aria-controls="example23" data-dt-idx="0" tabindex="0" id="example23_previous">Previous</a><span><a class="paginate_button current" aria-controls="example23" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="example23" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="example23" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="example23" data-dt-idx="4" tabindex="0">4</a><a class="paginate_button " aria-controls="example23" data-dt-idx="5" tabindex="0">5</a><a class="paginate_button " aria-controls="example23" data-dt-idx="6" tabindex="0">6</a></span><a class="paginate_button next" aria-controls="example23" data-dt-idx="7" tabindex="0" id="example23_next">Next</a></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Data Table</h4>
+                                <h6 class="card-subtitle">Data table example</h6>
+                                <div class="table-responsive m-t-40">
+                                    <div id="myTable_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="myTable_length"><label>Show <select name="myTable_length" aria-controls="myTable" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="myTable_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="myTable"></label></div><table id="myTable" class="table table-bordered table-striped dataTable no-footer" role="grid" aria-describedby="myTable_info">
+                                        <thead>
+                                            <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 215px;">Name</th><th class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 338px;">Position</th><th class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 164px;">Office</th><th class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 80px;">Age</th><th class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 148px;">Start date</th><th class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 118px;">Salary</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                        <tr role="row" class="odd">
+                                                <td class="sorting_1">Airi Satou</td>
+                                                <td>Accountant</td>
+                                                <td>Tokyo</td>
+                                                <td>33</td>
+                                                <td>2008/11/28</td>
+                                                <td>$162,700</td>
+                                            </tr><tr role="row" class="even">
+                                                <td class="sorting_1">Angelica Ramos</td>
+                                                <td>Chief Executive Officer (CEO)</td>
+                                                <td>London</td>
+                                                <td>47</td>
+                                                <td>2009/10/09</td>
+                                                <td>$1,200,000</td>
+                                            </tr><tr role="row" class="odd">
+                                                <td class="sorting_1">Ashton Cox</td>
+                                                <td>Junior Technical Author</td>
+                                                <td>San Francisco</td>
+                                                <td>66</td>
+                                                <td>2009/01/12</td>
+                                                <td>$86,000</td>
+                                            </tr><tr role="row" class="even">
+                                                <td class="sorting_1">Bradley Greer</td>
+                                                <td>Software Engineer</td>
+                                                <td>London</td>
+                                                <td>41</td>
+                                                <td>2012/10/13</td>
+                                                <td>$132,000</td>
+                                            </tr><tr role="row" class="odd">
+                                                <td class="sorting_1">Brenden Wagner</td>
+                                                <td>Software Engineer</td>
+                                                <td>San Francisco</td>
+                                                <td>28</td>
+                                                <td>2011/06/07</td>
+                                                <td>$206,850</td>
+                                            </tr><tr role="row" class="even">
+                                                <td class="sorting_1">Brielle Williamson</td>
+                                                <td>Integration Specialist</td>
+                                                <td>New York</td>
+                                                <td>61</td>
+                                                <td>2012/12/02</td>
+                                                <td>$372,000</td>
+                                            </tr><tr role="row" class="odd">
+                                                <td class="sorting_1">Bruno Nash</td>
+                                                <td>Software Engineer</td>
+                                                <td>London</td>
+                                                <td>38</td>
+                                                <td>2011/05/03</td>
+                                                <td>$163,500</td>
+                                            </tr><tr role="row" class="even">
+                                                <td class="sorting_1">Caesar Vance</td>
+                                                <td>Pre-Sales Support</td>
+                                                <td>New York</td>
+                                                <td>21</td>
+                                                <td>2011/12/12</td>
+                                                <td>$106,450</td>
+                                            </tr><tr role="row" class="odd">
+                                                <td class="sorting_1">Cara Stevens</td>
+                                                <td>Sales Assistant</td>
+                                                <td>New York</td>
+                                                <td>46</td>
+                                                <td>2011/12/06</td>
+                                                <td>$145,600</td>
+                                            </tr><tr role="row" class="even">
+                                                <td class="sorting_1">Cedric Kelly</td>
+                                                <td>Senior Javascript Developer</td>
+                                                <td>Edinburgh</td>
+                                                <td>22</td>
+                                                <td>2012/03/29</td>
+                                                <td>$433,060</td>
+                                            </tr></tbody>
+                                    </table><div class="dataTables_info" id="myTable_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div><div class="dataTables_paginate paging_simple_numbers" id="myTable_paginate"><a class="paginate_button previous disabled" aria-controls="myTable" data-dt-idx="0" tabindex="0" id="myTable_previous">Previous</a><span><a class="paginate_button current" aria-controls="myTable" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="myTable" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="myTable" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="myTable" data-dt-idx="4" tabindex="0">4</a><a class="paginate_button " aria-controls="myTable" data-dt-idx="5" tabindex="0">5</a><a class="paginate_button " aria-controls="myTable" data-dt-idx="6" tabindex="0">6</a></span><a class="paginate_button next" aria-controls="myTable" data-dt-idx="7" tabindex="0" id="myTable_next">Next</a></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Row grouping </h4>
+                                <h6 class="card-subtitle">Data table example</h6>
+                                <div class="table-responsive m-t-40">
+                                    <div id="example_wrapper" class="dataTables_wrapper"><div class="dataTables_length" id="example_length"><label>Show <select name="example_length" aria-controls="example" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="example_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="example"></label></div><table id="example" class="table display table-bordered table-striped dataTable" role="grid" aria-describedby="example_info" style="width: 1207px;">
+                                        <thead>
+                                            <tr role="row"><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 253px;">Name</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 401px;">Position</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 105px;">Age</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 189px;">Start date</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 139px;">Salary</th></tr>
+                                        </thead>
+                                        <tfoot>
+                                            <tr><th rowspan="1" colspan="1">Name</th><th rowspan="1" colspan="1">Position</th><th rowspan="1" colspan="1">Age</th><th rowspan="1" colspan="1">Start date</th><th rowspan="1" colspan="1">Salary</th></tr>
+                                        </tfoot>
+                                        <tbody>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                        <tr class="group"><td colspan="5">Edinburgh</td></tr><tr role="row" class="odd">
+                                                <td>Cedric Kelly</td>
+                                                <td>Senior Javascript Developer</td>
+                                                
+                                                <td>22</td>
+                                                <td>2012/03/29</td>
+                                                <td>$433,060</td>
+                                            </tr><tr class="group"><td colspan="5">London</td></tr><tr role="row" class="even">
+                                                <td>Jena Gaines</td>
+                                                <td>Office Manager</td>
+                                                
+                                                <td>30</td>
+                                                <td>2008/12/19</td>
+                                                <td>$90,560</td>
+                                            </tr><tr role="row" class="odd">
+                                                <td>Michael Silva</td>
+                                                <td>Marketing Designer</td>
+                                                
+                                                <td>66</td>
+                                                <td>2012/11/27</td>
+                                                <td>$198,500</td>
+                                            </tr><tr role="row" class="even">
+                                                <td>Bradley Greer</td>
+                                                <td>Software Engineer</td>
+                                                
+                                                <td>41</td>
+                                                <td>2012/10/13</td>
+                                                <td>$132,000</td>
+                                            </tr><tr role="row" class="odd">
+                                                <td>Suki Burks</td>
+                                                <td>Developer</td>
+                                                
+                                                <td>53</td>
+                                                <td>2009/10/22</td>
+                                                <td>$114,500</td>
+                                            </tr><tr class="group"><td colspan="5">New York</td></tr><tr role="row" class="even">
+                                                <td>Brielle Williamson</td>
+                                                <td>Integration Specialist</td>
+                                                
+                                                <td>61</td>
+                                                <td>2012/12/02</td>
+                                                <td>$372,000</td>
+                                            </tr><tr role="row" class="odd">
+                                                <td>Paul Byrd</td>
+                                                <td>Chief Financial Officer (CFO)</td>
+                                                
+                                                <td>64</td>
+                                                <td>2010/06/09</td>
+                                                <td>$725,000</td>
+                                            </tr><tr role="row" class="even">
+                                                <td>Gloria Little</td>
+                                                <td>Systems Administrator</td>
+                                                
+                                                <td>59</td>
+                                                <td>2009/04/10</td>
+                                                <td>$237,500</td>
+                                            </tr><tr class="group"><td colspan="5">San Francisco</td></tr><tr role="row" class="odd">
+                                                <td>Herrod Chandler</td>
+                                                <td>Sales Assistant</td>
+                                                
+                                                <td>59</td>
+                                                <td>2012/08/06</td>
+                                                <td>$137,500</td>
+                                            </tr><tr role="row" class="even">
+                                                <td>Colleen Hurst</td>
+                                                <td>Javascript Developer</td>
+                                                
+                                                <td>39</td>
+                                                <td>2009/09/15</td>
+                                                <td>$205,500</td>
+                                            </tr><tr role="row" class="odd">
+                                                <td>Charde Marshall</td>
+                                                <td>Regional Director</td>
+                                                
+                                                <td>36</td>
+                                                <td>2008/10/16</td>
+                                                <td>$470,600</td>
+                                            </tr><tr role="row" class="even">
+                                                <td>Fiona Green</td>
+                                                <td>Chief Operating Officer (COO)</td>
+                                                
+                                                <td>48</td>
+                                                <td>2010/03/11</td>
+                                                <td>$850,000</td>
+                                            </tr><tr class="group"><td colspan="5">Singapore</td></tr><tr role="row" class="odd">
+                                                <td>Jennifer Chang</td>
+                                                <td>Regional Director</td>
+                                                
+                                                <td>28</td>
+                                                <td>2010/11/14</td>
+                                                <td>$357,650</td>
+                                            </tr><tr class="group"><td colspan="5">Tokyo</td></tr><tr role="row" class="even">
+                                                <td>Garrett Winters</td>
+                                                <td>Accountant</td>
+                                                
+                                                <td>63</td>
+                                                <td>2011/07/25</td>
+                                                <td>$170,750</td>
+                                            </tr><tr role="row" class="odd">
+                                                <td>Airi Satou</td>
+                                                <td>Accountant</td>
+                                                
+                                                <td>33</td>
+                                                <td>2008/11/28</td>
+                                                <td>$162,700</td>
+                                            </tr><tr role="row" class="even">
+                                                <td>Rhona Davidson</td>
+                                                <td>Integration Specialist</td>
+                                                
+                                                <td>55</td>
+                                                <td>2010/10/14</td>
+                                                <td>$327,900</td>
+                                            </tr><tr role="row" class="odd">
+                                                <td>Shou Itou</td>
+                                                <td>Regional Marketing</td>
+                                                
+                                                <td>20</td>
+                                                <td>2011/08/14</td>
+                                                <td>$163,000</td>
+                                            </tr></tbody>
+                                    </table><div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing 1 to 17 of 17 entries</div><div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous">Previous</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="example" data-dt-idx="2" tabindex="0" id="example_next">Next</a></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Right sidebar -->
+                <!-- ============================================================== -->
+                <!-- .right-sidebar -->
+                <div class="right-sidebar">
+                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;"><div class="slimscrollright" style="overflow: hidden; width: auto; height: 100%;">
+                        <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>
+                        <div class="r-panel-body">
+                            <ul id="themecolors" class="m-t-20">
+                                <li><b>With Light sidebar</b></li>
+                                <li><a href="javascript:void(0)" data-theme="default" class="default-theme">1</a></li>
+                                <li><a href="javascript:void(0)" data-theme="green" class="green-theme">2</a></li>
+                                <li><a href="javascript:void(0)" data-theme="red" class="red-theme">3</a></li>
+                                <li><a href="javascript:void(0)" data-theme="blue" class="blue-theme working">4</a></li>
+                                <li><a href="javascript:void(0)" data-theme="purple" class="purple-theme">5</a></li>
+                                <li><a href="javascript:void(0)" data-theme="megna" class="megna-theme">6</a></li>
+                                <li class="d-block m-t-30"><b>With Dark sidebar</b></li>
+                                <li><a href="javascript:void(0)" data-theme="default-dark" class="default-dark-theme">7</a></li>
+                                <li><a href="javascript:void(0)" data-theme="green-dark" class="green-dark-theme">8</a></li>
+                                <li><a href="javascript:void(0)" data-theme="red-dark" class="red-dark-theme">9</a></li>
+                                <li><a href="javascript:void(0)" data-theme="blue-dark" class="blue-dark-theme">10</a></li>
+                                <li><a href="javascript:void(0)" data-theme="purple-dark" class="purple-dark-theme">11</a></li>
+                                <li><a href="javascript:void(0)" data-theme="megna-dark" class="megna-dark-theme ">12</a></li>
+                            </ul>
+                            <ul class="m-t-20 chatonline">
+                                <li><b>Chat option</b></li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="./assets/1.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="./assets/2.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="./assets/3.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="./assets/4.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="./assets/5.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="./assets/6.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="./assets/7.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="./assets/8.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><div class="slimScrollBar" style="background: rgb(220, 220, 220); width: 5px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Right sidebar -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer"> © 2018 Material Pro Admin by wrappixel.com </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="./assets/jquery.min.js.download"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="./assets/popper.min.js.download"></script>
+    <script src="./assets/bootstrap.min.js.download"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="./assets/jquery.slimscroll.js.download"></script>
+    <!--Wave Effects -->
+    <script src="./assets/waves.js.download"></script>
+    <!--Menu sidebar -->
+    <script src="./assets/sidebarmenu.js.download"></script>
+    <!--stickey kit -->
+    <script src="./assets/sticky-kit.min.js.download"></script>
+    <script src="./assets/jquery.sparkline.min.js.download"></script>
+    <!--Custom JavaScript -->
+    <script src="./assets/custom.min.js.download"></script>
+    <!-- This is data table -->
+    <script src="./assets/jquery.dataTables.min.js.download"></script>
+    <!-- start - This is for export functionality only -->
+    <script src="./assets/dataTables.buttons.min.js.download"></script>
+    <script src="./assets/buttons.flash.min.js.download"></script>
+    <script src="./assets/jszip.min.js.download"></script>
+    <script src="./assets/pdfmake.min.js.download"></script>
+    <script src="./assets/vfs_fonts.js.download"></script>
+    <script src="./assets/buttons.html5.min.js.download"></script>
+    <script src="./assets/buttons.print.min.js.download"></script>
+    <!-- end - This is for export functionality only -->
+    <script>
+    $(document).ready(function() {
+        $('#myTable').DataTable();
+        $(document).ready(function() {
+            var table = $('#example').DataTable({
+                "columnDefs": [{
+                    "visible": false,
+                    "targets": 2
+                }],
+                "order": [
+                    [2, 'asc']
+                ],
+                "displayLength": 25,
+                "drawCallback": function(settings) {
+                    var api = this.api();
+                    var rows = api.rows({
+                        page: 'current'
+                    }).nodes();
+                    var last = null;
+                    api.column(2, {
+                        page: 'current'
+                    }).data().each(function(group, i) {
+                        if (last !== group) {
+                            $(rows).eq(i).before('<tr class="group"><td colspan="5">' + group + '</td></tr>');
+                            last = group;
+                        }
+                    });
+                }
+            });
+            // Order by the grouping
+            $('#example tbody').on('click', 'tr.group', function() {
+                var currentOrder = table.order()[0];
+                if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
+                    table.order([2, 'desc']).draw();
+                } else {
+                    table.order([2, 'asc']).draw();
+                }
+            });
+        });
+    });
+    $('#example23').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
+    });
+    </script>
+    <!-- ============================================================== -->
+    <!-- Style switcher -->
+    <!-- ============================================================== -->
+    <script src="./assets/jQuery.style.switcher.js.download"></script>
+
+
+</body></html>
