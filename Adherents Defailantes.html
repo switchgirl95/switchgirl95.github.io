@@ -295,7 +295,7 @@
                         <h3 class="text-themecolor m-b-0 m-t-0">Liste des Emprunts</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Liste des Emprunts</li>
+                            <li class="breadcrumb-item active">Adherents Defailantes</li>
                         </ol>
                     </div>
                     
@@ -310,7 +310,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <div class="card-title"><div class="btn btn-danger">+ Ajouter Emprunt</div></div>
+                                
                                 
                                 <div class="table-responsive m-t-40">
                                     <table id="myTable" class="table table-bordered table-striped dataTable no-footer" role="grid" aria-describedby="myTable_info">
@@ -322,7 +322,35 @@
                                             
                                             
                                             
-                                            
+                                    <!-- sample modal content -->
+                                <div class="modal fade bs-example-modal-sm suspendre" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" style="display: none;">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="mySmallModalLabel">Suspendre .. ?</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                            </div>
+                                            <div class="modal-body"> <span><div class="btn btn-info">Oui</div><div class="btn btn-danger">Non</div> </span> </div>
+                                        </div>
+                                        <!-- /.modal-content -->
+                                    </div>
+                                    <!-- /.modal-dialog -->
+                                </div>
+                                <!-- /.modal -->     
+                                <div class="modal fade bs-example-modal-sm exclure" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" style="display: none;">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="mySmallModalLabel">Exclure .. ?</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                            </div>
+                                            <div class="modal-body"> <span><div class="btn btn-info">Oui</div><div class="btn btn-danger">Non</div> </span> </div>
+                                        </div>
+                                        <!-- /.modal-content -->
+                                    </div>
+                                    <!-- /.modal-dialog -->
+                                </div>
+                                <!-- /.modal -->  
                                             
                                             
                                             
@@ -377,7 +405,7 @@
                                             
                                         <tr role="row" class="odd">
                                                 <td class="sorting_1">Airi Satou</td>
-                                            <td><div class="btn btn-info">Suspendre</div></td><td><div class="btn btn-info">Exclure</div></td>
+                                            <td><div class="btn btn-info" alt="default" data-toggle="modal" data-target=".suspendre">Suspendre</div></td><td><div class="btn btn-info" alt="default" data-toggle="modal" data-target=".exclure">Exclure</div></td>
                                                 
                                             </tr><tr role="row" class="even">
                                                 <td class="sorting_1">Angelica Ramos</td>
